@@ -6,6 +6,11 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Cascadia Mono', 'Consola';
+  background-color: #131516;
+}
+
+h1 {
+  color: #d8d4cf
 }
 
 .center {
