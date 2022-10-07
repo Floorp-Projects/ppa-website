@@ -18,14 +18,11 @@
       <pre><code class="language-shell">curl -fsSL https://ppa.ablaze.one/KEY.gpg | sudo gpg --dearmor -o /usr/share/keyrings/Floorp.gpg
 sudo curl -sS --compressed -o /etc/apt/sources.list.d/Floorp.list "https://ppa.ablaze.one/Floorp.list"
 sudo apt update
-sudo apt install floorp</code><button onclick="copycmd()">📋</button></pre>
+sudo apt install floorp</code><button id="copy-button" onclick="copycmd()">📋</button></pre>
     </div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-bash.min.js"></script>
-  <script>
-    function copycmd() {
-      navigator.clipboard.writeText("curl -fsSL https://ppa.ablaze.one/KEY.gpg | sudo gpg --dearmor -o /usr/share/keyrings/Floorp.gpg\nsudo curl -sS --compressed -o /etc/apt/sources.list.d/Floorp.list 'https://ppa.ablaze.one/Floorp.list'\nsudo apt update\nsudo apt install floorp")
-    }
+  <script src="scripts.js">
   </script>
 </html>
