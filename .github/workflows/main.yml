@@ -18,4 +18,6 @@ jobs:
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
         exclude: |
+          **/.git*
+          **/.git*/**
           LICENSE
