@@ -11,7 +11,7 @@ function copied_popup() {
 
 function copycmd() {
   navigator.clipboard.writeText(
-    "curl -fsSL https://ppa.ablaze.one/KEY.gpg | sudo gpg --dearmor -o /usr/share/keyrings/Floorp.gpg\nsudo curl -sS --compressed -o /etc/apt/sources.list.d/Floorp.list 'https://ppa.ablaze.one/Floorp.list'\nsudo apt update\nsudo apt install floorp"
+    "curl -fsSL https://ppa.floorp.app/KEY.gpg | sudo gpg --dearmor -o /usr/share/keyrings/Floorp.gpg\nsudo curl -sS --compressed -o /etc/apt/sources.list.d/Floorp.list 'https://ppa.floorp.app/Floorp.list'\nsudo apt update\nsudo apt install floorp"
   );
   copied_popup();
 }
